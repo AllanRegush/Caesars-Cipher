@@ -1,10 +1,10 @@
 # Caesar Cipher 
 
-[Inspired by Odin Project Assignment] (https://www.theodinproject.com/courses/ruby-programming/lessons/building-blocks#project-1-caesar-cipher)
+[Inspired by Odin Project Assignment](https://www.theodinproject.com/courses/ruby-programming/lessons/building-blocks#project-1-caesar-cipher)
 
 ### Dependencies
 
-1. [Google Test] (https://github.com/google/googletest)
+1. [Google Test](https://github.com/google/googletest)
 
 ### To build
 
