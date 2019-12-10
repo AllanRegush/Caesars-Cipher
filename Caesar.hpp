@@ -1,8 +1,6 @@
 #pragma once
 #ifndef Caesar_hpp
 
-#include <string>
-
 char encryptLetter(char letter, int key, int asciiStart);
 
 std::string caesar(std::string phrase, int key);

@@ -37,3 +37,16 @@ TEST( encryptLetterTests, HandlesCharUpperCase ) {
 
     EXPECT_EQ( result, expect );
 }
+
+
+TEST( caesarTests, HandlesSpaces ) {
+    std::string phrase = "What a string!";
+    int key = 5;
+
+    std::string result = caesar(phrase, key);
+
+    std::string expect = "Bmfy f xywnsl!";
+
+    ASSERT_EQ( result, expect );
+}
+
