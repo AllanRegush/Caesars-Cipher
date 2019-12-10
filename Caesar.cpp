@@ -1,7 +1,9 @@
 #include <string>
 #include <iostream>
 
-int main()
+#include "Caesar.hpp"
+
+char encryptLetter(char letter, int key, int asciiStart)
 {
-    std::cout << "Hello" << std::endl; 
+  return ( ( ( (int) letter - asciiStart ) + key ) % 26) + asciiStart;
 }
