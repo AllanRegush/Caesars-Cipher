@@ -23,5 +23,5 @@ add_library(${This} STATIC ${Sources} ${Headers})
 
 add_subdirectory(test)
 
-add_executable(caesar main.cpp
+add_executable(caesar main.cpp ${Sources}
 )
