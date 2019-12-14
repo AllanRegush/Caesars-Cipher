@@ -1,4 +1,4 @@
-# Caesar Cipher 
+# Caesar's Cipher 
 
 [Inspired by Odin Project Assignment](https://www.theodinproject.com/courses/ruby-programming/lessons/building-blocks#project-1-caesar-cipher)
 
