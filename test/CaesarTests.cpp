@@ -3,49 +3,49 @@
 #include "../Caesar.hpp"
 
 TEST( encryptLetterTests, HandlesCharIncrementLowerCase ) {
-    char letter = 'a';
-    int key = 1;
-    int asciiStart = 97;
+    const char letter = 'a';
+    const int key = 1;
+    const int asciiStart = 97;
 
-    char result = encryptLetter( letter, key, asciiStart );
+    const char result = encryptLetter( letter, key, asciiStart );
     
-    char expect = 'b';
+    const char expect = 'b';
 
     EXPECT_EQ( result, expect );
 }
 
 TEST( encryptLetterTests, HandlesCharWrapAround ) {
-    char letter = 'z';
-    int key = 1;
-    int asciiStart = 97;
+    const char letter = 'z';
+    const int key = 1;
+    const int asciiStart = 97;
 
-    char result = encryptLetter( letter, key, asciiStart );
+    const char result = encryptLetter( letter, key, asciiStart );
     
-    char expect = 'a';
+    const char expect = 'a';
 
     EXPECT_EQ( result, expect );
 }
 
 TEST( encryptLetterTests, HandlesCharUpperCase ) {
-    char letter = 'A';
-    int key = 26;
-    int asciiStart = 65;
+    const char letter = 'A';
+    const int key = 26;
+    const int asciiStart = 65;
 
-    char result = encryptLetter( letter, key, asciiStart );
+    const char result = encryptLetter( letter, key, asciiStart );
     
-    char expect = 'A';
+    const char expect = 'A';
 
     EXPECT_EQ( result, expect );
 }
 
 
 TEST( caesarTests, HandlesSpaces ) {
-    std::string phrase = "What a string!";
-    int key = 5;
+    const std::string phrase = "What a string!";
+    const int key = 5;
 
-    std::string result = caesar(phrase, key);
+    const std::string result = caesar(phrase, key);
 
-    std::string expect = "Bmfy f xywnsl!";
+    const std::string expect = "Bmfy f xywnsl!";
 
     ASSERT_EQ( result, expect );
 }
